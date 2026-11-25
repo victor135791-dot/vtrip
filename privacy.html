@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="vTrip Privacy Policy — how vTrip handles itinerary data, private iCloud Backup, and optional read-only Gmail access. No developer servers, no ads, no tracking.">
+  <meta name="theme-color" content="#365b4d">
+  <link rel="canonical" href="https://victor135791-dot.github.io/vtrip/privacy.html">
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css?v=3">
+  <title>Privacy Policy — vTrip</title>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="shell">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="./" aria-label="vTrip home">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 18v-7h16v7M23 52v4m18-4v4"/>
+            <rect x="17" y="18" width="30" height="34" rx="6"/>
+          </g>
+          <g transform="translate(17 18) scale(.30)" fill="currentColor">
+            <path d="M23 36h13l12 32Q55 49 67 38l5 4Q57 55 48 80Z"/>
+            <path d="M82 23 53 34 65 40 72 50Z"/>
+          </g>
+        </svg>vTrip
+      </a>
+      <div class="nav-links">
+        <a href="./">Home</a>
+        <a href="./support.html">Support</a>
+        <a href="mailto:vorom.yip@gmail.com">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="shell policy" id="main">
+    <a class="back-link" href="./">← Back to vTrip</a>
+    <div class="eyebrow">Your information, explained</div>
+    <h1>Privacy Policy</h1>
+    <p class="policy-meta">Last updated: 25 November 2026 · vTrip for iOS</p>
+    <p class="lead">vTrip helps you organize travel plans, bookings, expenses, and confirmations on your device. This policy explains how the vTrip iOS app and this website handle information. Contact <a href="mailto:vorom.yip@gmail.com">vorom.yip@gmail.com</a> with any privacy questions.</p>
+
+    <div class="summary">
+      <p><strong>TL;DR:</strong> vTrip collects no personal data on developer servers. There are no vTrip user accounts, no advertising SDKs, no behavioral analytics, and no cross-app tracking. Your trips stay on your device and—when enabled—in your own personal Apple iCloud Private Database, which the developer cannot access. Optional Gmail access is read-only and processed directly on your device.</p>
+    </div>
+
+    <h2>1. App Store Privacy Label</h2>
+    <p>For Apple’s App Privacy details, vTrip declares <strong>Data Not Collected</strong>. vTrip does not operate a developer backend that collects, stores, links, or tracks your travel data, personal identity, or email content. Optional iCloud Private Backup writes exclusively to your own Apple Account’s CloudKit Private Database, which is inaccessible to the developer. Optional Gmail connections communicate directly between the vTrip app on your device and Google.</p>
+
+    <h2>2. Information you store in vTrip</h2>
+    <p>vTrip stores the travel details you create or explicitly approve to import, including trip names, dates, countries, cities, weather areas, traveller counts and optional names, itinerary schedules, hotel/flight/car-rental details, addresses, booking references, notes, packing checklists, expenses, currencies, and saved confirmation email text. This information stays on your device (and, if iCloud Private Backup is enabled, inside your own private Apple iCloud container) solely to display and organize your trips.</p>
+
+    <h2 id="icloud">3. Private iCloud Backup (CloudKit Private Database)</h2>
+    <p>To help you restore your trips if you change or lose your phone, vTrip offers <strong>iCloud Private Backup</strong> using Apple’s <strong>CloudKit Private Database</strong> (<code>iCloud.com.victoryip.vTrip</code>).</p>
+    <ul>
+      <li><strong>What is backed up:</strong> a compressed snapshot of your trips, itinerary items, saved booking confirmations inside your trips, standalone expenses, packing checklists, day notes, weather areas, home currency, reference exchange rates, navigation preference, and saved Apple Mail message-ID headers.</li>
+      <li><strong>What is never backed up to iCloud:</strong> Google OAuth access/refresh tokens (which remain in device-only iOS Keychain) and unimported pending Gmail inbox copies.</li>
+      <li><strong>Strictly private to your Apple Account:</strong> your backup is stored inside your personal Apple iCloud private database under Apple’s iCloud privacy and security protections. The developer cannot view, query, read, or access your iCloud backup.</li>
+      <li><strong>Your controls:</strong> you can turn Automatic iCloud Backup on or off, trigger a manual backup, restore (merge or replace), or delete your iCloud backup at any time in <strong>Settings → iCloud Private Backup</strong>.</li>
+    </ul>
+
+    <h2 id="gmail">4. Optional Gmail Connection</h2>
+    <p>You can use vTrip completely without Gmail by entering bookings manually or pasting confirmation emails. If you choose to connect one or more Gmail accounts, Google handles sign-in and consent directly. vTrip never asks for or stores your Google password.</p>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Google Permission</th>
+          <th scope="col">Why it is requested</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic Google identity<br><code>openid</code> and <code>email</code></td>
+          <td>Identify and display which Gmail account you connected and keep each connected inbox separate.</td>
+        </tr>
+        <tr>
+          <td>Gmail read-only<br><code>gmail.readonly</code></td>
+          <td>Search likely travel confirmation emails and read their text locally on your device so you can review and approve bookings to import.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Google’s <code>gmail.readonly</code> scope allows reading email messages; Google does not offer a booking-only scope. vTrip uses it strictly to search likely travel-booking confirmations within your chosen lookback range (1, 3, or 6 months, or 1, 2, 3, or 5 years), up to 120 unseen messages per batch. vTrip never requests permission to send, modify, or delete Gmail messages and does not download attachments or embedded images.</p>
+    <p><strong>On-device processing &amp; Limited Use:</strong> All email parsing runs locally on your iPhone or iPad. vTrip does not transmit Gmail content to a developer server, does not sell Gmail data, does not use Gmail data for advertising, and does not use Gmail data to train or query external AI models. vTrip’s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <p><strong>Credentials:</strong> Google OAuth access and refresh tokens are stored strictly in the iOS Keychain with device-only, unlocked-device accessibility (<code>kSecAttrAccessibleWhenUnlockedThisDeviceOnly</code>). They are never synced to iCloud or sent to any third party other than Google’s OAuth endpoints.</p>
+
+    <h2>5. Other Services Used on Request</h2>
+    <ul>
+      <li><strong>Apple iCloud / CloudKit (Private Database):</strong> stores your private trip backup snapshot in your personal Apple Account when iCloud Private Backup is enabled, governed by Apple’s privacy policy.</li>
+      <li><strong>Google (Gmail &amp; Google Maps):</strong> processes optional Gmail OAuth sign-in/API requests and optional Google Maps directions links you choose to open.</li>
+      <li><strong>Apple Maps &amp; Apple Mail:</strong> used on-device when viewing maps, searching places, opening directions, or opening an original confirmation in Apple Mail.</li>
+      <li><strong>Weather (Open-Meteo):</strong> when you view a destination forecast, vTrip requests public weather forecasts from <a href="https://open-meteo.com/en/terms">Open-Meteo</a> using only the destination area’s latitude, longitude, time zone, and optional elevation—never your name, Gmail content, booking references, or live GPS location.</li>
+      <li><strong>Reference Exchange Rates (ER-API / Frankfurter):</strong> vTrip fetches public currency exchange tables (e.g., USD base rates). These requests contain no itinerary, expense, or personal data.</li>
+      <li><strong>Email Support:</strong> if you email <a href="mailto:vorom.yip@gmail.com">vorom.yip@gmail.com</a>, we receive your email address and message solely to reply and assist with your request.</li>
+    </ul>
+    <p>vTrip does not include advertising SDKs, crash-reporting trackers, or behavioral analytics services.</p>
+
+    <h2>6. Your Controls, Retention &amp; Deletion</h2>
+    <ul>
+      <li><strong>Delete trips or bookings:</strong> delete individual bookings or entire trips directly inside the app.</li>
+      <li><strong>Delete iCloud backup:</strong> go to <strong>Settings → iCloud Private Backup → Delete iCloud backup</strong> to remove your snapshot from iCloud without deleting local trips.</li>
+      <li><strong>Disconnect Gmail:</strong> in <strong>Booking inbox → Email settings → Disconnect account</strong>, disconnecting removes that account’s Keychain tokens, pending inbox drafts, and processed-message history from the device (already imported bookings remain in your trips).</li>
+      <li><strong>Revoke access at Google:</strong> you can revoke vTrip’s Gmail permission anytime in your <a href="https://myaccount.google.com/connections">Google Account third-party connections</a>.</li>
+      <li><strong>Uninstall the app:</strong> deleting vTrip removes all local app data from your device.</li>
+    </ul>
+    <p>Because vTrip does not hold your trip or email data on a developer server, we cannot view or remotely delete your on-device or private iCloud data. All controls live directly in the app and your Apple/Google account settings.</p>
+
+    <h2>7. Children</h2>
+    <p>vTrip is a general travel organizer and is not directed to children under 13 (or under 16 in the EEA/UK).</p>
+
+    <h2>8. This Website</h2>
+    <p>This static website is hosted on GitHub Pages to provide app information, support, and this privacy policy. It does not connect to Gmail, accept data uploads, or run advertising or analytics scripts. GitHub may process standard web server connection logs under GitHub’s privacy statement.</p>
+
+    <h2>9. Changes &amp; Contact</h2>
+    <p>If vTrip’s data practices change, we will update this privacy policy and revise the “Last updated” date above.</p>
+    <p>Questions? Email <a href="mailto:vorom.yip@gmail.com?subject=vTrip%20Privacy">vorom.yip@gmail.com</a>.</p>
+  </main>
+
+  <footer class="shell">
+    <div class="footer">
+      <span>© 2026 Ka Yue Yip · vTrip</span>
+      <div class="footer-links">
+        <a href="./">Home</a>
+        <a href="./support.html">Support</a>
+        <a href="mailto:vorom.yip@gmail.com">Contact</a>
+        <a href="#main">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
